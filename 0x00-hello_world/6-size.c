@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+/**
+ *Start point
+ */
 int main(void)
 {
 	char a;
