@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *main - Starting Point.
  *@void: No parameters.
