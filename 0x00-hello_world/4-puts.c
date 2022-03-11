@@ -1,6 +1,11 @@
 #include <stdio.h>
 /**
- *Starting Point
+ *main - Starting Point.
+ *@void: No parameters.
+ *
+ * Description: Prints text with puts().
+ * section header:
+ * Return: Success
  */
 int main(void)
 {
