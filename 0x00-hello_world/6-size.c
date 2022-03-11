@@ -1,6 +1,12 @@
 #include <stdio.h>
+
 /**
- *Start point
+ *main - Start point
+ *@void: Take no parameters
+ *
+ * Description: Variables are stored to memory and their memory size returned.
+ * section header: None
+ * Return: Success
  */
 int main(void)
 {
