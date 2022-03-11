@@ -1,6 +1,11 @@
 #include <stdio.h>
 /**
- *Starting point
+ *main - Starting point.
+ *@void: Take no parameters.
+ *
+ * Prints text on standard output with printf
+ * section header:
+ * Return: Success
  */
 int main(void)
 {
