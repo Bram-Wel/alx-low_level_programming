@@ -4,7 +4,8 @@
 /**
  *main - Entry Point
  *
- *Description: Printing string to standard error without man (3) puts() & man (3) printf()
+ *Description: Printing string to standard error 
+ *without man (3) puts() & man (3) printf()
  *Return: -1 Error.
  */
 int main(void)
