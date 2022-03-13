@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 /**
- *main - Starting Point.
- *@void: No parameters.
+ *main - Starting Point..
  *
  * Description: Prints text with puts().
- * section header:
- * Return: Success
+ * Return: 0 if exution => Success
  */
 int main(void)
 {
