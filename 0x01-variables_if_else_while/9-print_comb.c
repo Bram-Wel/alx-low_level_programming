@@ -9,14 +9,17 @@
  */
 int main(void)
 {
-	char character = '0';
+	int digit = 0;
 
-	while (character <= '9')
+	while (digit <= 9)
 {
-	putchar(character);
+	putchar(digit % 10 + '0');
+	if (digit <= 8)
+{
 	putchar(',');
 	putchar(' ');
-	character++;
+}
+	digit++;
 }
 	putchar('\n');
 	return (0);
