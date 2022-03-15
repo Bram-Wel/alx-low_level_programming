@@ -1,2 +1,2 @@
-#C - Functions & nested loops.
-##C - Headers.
+# C - Functions & nested loops.
+## C - Headers.
