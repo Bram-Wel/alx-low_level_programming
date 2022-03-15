@@ -9,9 +9,15 @@
  */
 int main(void)
 {
-	unsigned char character = '0xf';
+	int  num = 0;
+	char character = 'a';
 
-	while (character <= '0x0')
+	while (num<=9)
+{
+	putchar(num%10 + '0');
+	num++;
+}
+	while (character <= 'f')
 {
 	putchar(character);
 	character++;
