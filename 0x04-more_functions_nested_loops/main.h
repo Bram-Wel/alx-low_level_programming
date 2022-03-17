@@ -7,7 +7,7 @@ int mul(int a, int b);
 void print_numbers(void);
 void print_most_numbers(void);
 int print_sign(int n);
-int _abs(int);
+void print_line(int n);
 int print_last_digit(int);
 void more_numbers(void);
 void times_table(void);
