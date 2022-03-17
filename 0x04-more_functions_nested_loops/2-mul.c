@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * mul - Multiply 2 integers.
