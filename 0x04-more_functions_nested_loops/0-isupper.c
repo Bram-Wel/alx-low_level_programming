@@ -4,7 +4,7 @@
  * _islower - Check for lowercase characters.
  * @c: Character operand.
  *
- * Return: 1 for lowercase & 0 otherwise.
+ * Return: 1 for uppercase & 0 otherwise.
  */
 int _isupper(int c)
 {
