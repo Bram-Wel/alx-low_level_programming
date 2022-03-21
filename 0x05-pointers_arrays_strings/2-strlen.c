@@ -8,9 +8,11 @@
   */
 int _strlen(char *s)
 {
-	char array[] = *s;
+	char array[];
 	int i;
 	int Strlen;
+
+	array = *s
 
 	i=0;
 	while (array[i] != '\0')
