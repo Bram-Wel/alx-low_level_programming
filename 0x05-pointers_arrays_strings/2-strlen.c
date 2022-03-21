@@ -8,7 +8,7 @@
   */
 int _strlen(char *s)
 {
-	char array[];
+	char array[10000];
 	int i;
 	int Strlen;
 
