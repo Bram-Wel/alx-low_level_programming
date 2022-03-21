@@ -6,6 +6,5 @@
   */
 void _puts(char *str)
 {
-	char buffer = *str;
-	write(1, buffer, _strlen(buffer));
+	write(1, *str, _strlen(*str));
 }
