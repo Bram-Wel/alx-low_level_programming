@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+  * _strlen - Find length of a string.
+  * @s: String to evaluate.
+  *
+  *Return: Length of the string.
+  */
+int _strlen(char *s)
+{
+	char array[] = *s;
+	int i;
+	int Strlen;
+
+	i=0;
+	while (array[i] != '\0')
+	{
+		Strlen = i;
+		i++;
+	}
+
+	return (Strlen);
+}
