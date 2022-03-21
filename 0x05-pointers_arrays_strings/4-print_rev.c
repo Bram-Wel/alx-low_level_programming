@@ -6,6 +6,9 @@
   */
 void print_rev(char *s)
 {
+	int i;
+
+	i = sizeof(*s) - 1;
 	while (*s != '\0')
 	{
 		_putchar(*s);
