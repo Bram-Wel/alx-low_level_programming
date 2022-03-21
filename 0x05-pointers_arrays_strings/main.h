@@ -3,7 +3,7 @@ void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
 void _puts(char *str);
-int mul(int a, int b);
+void print_rev(char *s);
 void print_numbers(void);
 void print_most_numbers(void);
 int print_sign(int n);
