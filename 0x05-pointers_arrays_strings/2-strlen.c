@@ -8,18 +8,14 @@
   */
 int _strlen(char *s)
 {
-	char array[10000];
 	int i;
-	int Strlen;
-
-	array = *s;
 
 	i=0;
-	while (array[i] != '\0')
+	while (*s != '\0')
 	{
-		Strlen = i;
 		i++;
+		s++;
 	}
 
-	return (Strlen);
+	return (i);
 }
