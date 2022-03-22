@@ -5,7 +5,7 @@ int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
 void rev_string(char *s);
-void print_most_numbers(void);
+void puts2(char *str);
 int print_sign(int n);
 void print_line(int n);
 void print_diagonal(int n);
