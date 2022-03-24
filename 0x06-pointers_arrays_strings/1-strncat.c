@@ -35,7 +35,7 @@ char *_strncat(char *dest, char *src, int n)
 
 		*dest = '\0';
 	}
-	else
+	else if (i >= n)
 	{
 		c = *(src + (n - 1));
 		while (*src != c)
