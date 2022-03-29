@@ -35,6 +35,10 @@ char *_strncat(char *dest, char *src, int n)
 
 		*dest = '\0';
 	}
+	else if (n == 0)
+	{
+		;
+	}
 	else
 	{
 		c = *(src + (n - 1));
