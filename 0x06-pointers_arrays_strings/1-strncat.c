@@ -40,14 +40,13 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	else
 	{
-		c = *(src + (n - 1));
+		c = *(src + n);
 		while (*src != c)
 		{
 			*dest = *src;
 			dest++;
 			src++;
 		}
-		*dest = c;
 	}
 	/*printf("%s\n", dest - i);*/
 	return (p);
