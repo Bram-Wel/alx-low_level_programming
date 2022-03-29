@@ -32,7 +32,6 @@ char *_strncat(char *dest, char *src, int n)
 			dest++;
 			src++;
 		}
-
 		*dest = '\0';
 	}
 	else if (n == 0)
@@ -48,11 +47,8 @@ char *_strncat(char *dest, char *src, int n)
 			dest++;
 			src++;
 		}
-
 		*dest = c;
 	}
-
 	/*printf("%s\n", dest - i);*/
-
 	return (p);
 }
