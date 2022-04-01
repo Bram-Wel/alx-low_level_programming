@@ -16,8 +16,8 @@ int is_palindrome(char *s)
 
 	ptr = revstr(s);
 
-	/*if (*s == '\0')
-		return (1);*/
+	if (*s == '\0')
+		return (1);
 
 	if (*(s + i) == *(ptr + i))
 		return (1);
@@ -37,6 +37,7 @@ int is_palindrome(char *s)
   *
   * Description: This function reverses the pointer to the last character
   * of the string to faccilitate comparison using palindrome function.
+  * Return: Pointer to string.
   */
 char *revstr(char *s)
 {
