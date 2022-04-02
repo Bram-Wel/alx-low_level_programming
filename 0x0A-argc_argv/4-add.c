@@ -17,13 +17,16 @@ int main(int argc, char **argv)
 
 	if (argc == 1)
 	{
-		printf("%d\n",0);
+		printf("%d\n", 0);
 	}
 	else
 	{
-		for (i =1; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			ptr  = *(argv + i);
+
+			if (atoi(ptr) < 0)
+				return (0);
 
 			if (*ptr < 48 || *ptr > 57)
 			{
