@@ -1,6 +1,6 @@
-# argc & argv in main function.
+# * *argc* & *argv* in main function.
 
-- What are arc and argv.
+- What are __argc__ and __argv__.
 - The two Prototypes of main.
 - Using arguments passed to a program.
 
