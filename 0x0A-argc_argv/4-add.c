@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 
 /**
@@ -27,8 +26,8 @@ int main(int argc, char **argv)
 
 			if (atoi(ptr) < 0)
 			{
-				printf("%d\n", 0);
-				return (0);
+				/*printf("%d\n", 0);*/
+				return (1);
 			}
 			if (*ptr < 48 || *ptr > 57)
 			{
