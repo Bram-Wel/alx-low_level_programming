@@ -19,10 +19,11 @@ char *_strdup(char *str)
 	for (n = 0; *str != '\0'; n++)
 		str++;
 
-	cpy = malloc(n * sizeof(char));
+	cpy = malloc((n + 1) * sizeof(char));
 
 	if (cpy == NULL)
 		return (0);
+
 	while (*str != c)
 		str--;
 
@@ -32,6 +33,7 @@ char *_strdup(char *str)
 		*(cpy + i) = *(str + i);
 		i++;
 	}
+
 
 	/*printf("n:%d\nstr:%s\ncpy:%s\ni:%d\n", n, str, cpy, i);*/
 
