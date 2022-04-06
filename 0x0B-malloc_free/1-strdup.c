@@ -1,7 +1,5 @@
 #include <stdlib.h>
 #include "main.h"
-#include <stdio.h>
-
 /**
   * _strdup - Copies sring parameter to new memory location.
   * @str: String parameter.
@@ -35,7 +33,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	printf("n:%d\nstr:%s\ncpy:%s\ni:%d\n", n, str, cpy, i);
+	/*printf("n:%d\nstr:%s\ncpy:%s\ni:%d\n", n, str, cpy, i);*/
 
 	return (cpy);
 }
