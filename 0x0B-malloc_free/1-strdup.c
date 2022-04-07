@@ -11,10 +11,12 @@ char *_strdup(char *str)
 	unsigned int i;
 	unsigned int n;
 	char *cpy;
-	char c = *str;
+	char c;
 
 	if (str == NULL)
 		return (0);
+
+	c = *str;
 
 	for (n = 0; *str != '\0'; n++)
 		str++;
