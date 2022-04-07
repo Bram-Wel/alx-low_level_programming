@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i < (unsigned int)strlen(s1); i++)
 		*(array + i) = *(s1 + i);
 
-	printf("i: %d\nn: %d\n", i, n);
+/*	printf("i: %d\nn: %d\n", i, n);*/
 
 	for (; i < n; i++)
 	{
