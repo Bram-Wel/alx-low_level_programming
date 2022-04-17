@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** _calloc - Program that allocates an array of nmemb elements of size bytes
+/**
+  * _calloc - Program that allocates an array of nmemb elements of size bytes
   * @nmemb: Number of array elements
   * @size: Size of each element, in bytes
   * Return: pointer to first index of array
