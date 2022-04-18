@@ -4,7 +4,7 @@
 /**
   * main - Prints the name of the file.
   */
-int main()
+int main(void)
 {
 	printf("%s\n", __BASE_FILE__);
 
