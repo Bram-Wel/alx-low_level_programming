@@ -19,10 +19,7 @@ void print_dog(struct dog *d)
 		else
 			printf("Name: %s\n", d->name);
 
-		if (d->age == 0 /*|| d->age == NULL*/)
-			printf("Age: %p\n", NULL);
-		else
-			printf("Äge: %0.2f\n", d->age);
+		printf("Äge: %0.6f\n", d->age);
 
 		if (d->owner == 0)
 			printf("Owner: %p\n", d->owner);
