@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include "_putchar.c"
+/*#include "_putchar.c"*/
 
 /**
   * print_name - This function will print a name.
@@ -10,6 +10,9 @@
   */
 void print_name(char *name, void (*f)(char *))
 {
+	if (name == 0 || f == 0)
+		return;
+
 	f(name);
 }
 
@@ -17,7 +20,7 @@ void print_name(char *name, void (*f)(char *))
   * f - Prints a name that is passed to it.
   * @name: Name operand.
   */
-void f(char *name)
+/*void f(char *name)
 {
 	int i = 0;
 
@@ -27,4 +30,4 @@ void f(char *name)
 		i++;
 	}
 	_putchar('\0');
-}
+}*/
