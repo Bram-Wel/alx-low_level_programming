@@ -15,19 +15,3 @@ void print_name(char *name, void (*f)(char *))
 
 	f(name);
 }
-
-/**
-  * f - Prints a name that is passed to it.
-  * @name: Name operand.
-  */
-/*void f(char *name)
-{
-	int i = 0;
-
-	while (*(name + i) != 0)
-	{
-		_putchar(*(name + i));
-		i++;
-	}
-	_putchar('\0');
-}*/
