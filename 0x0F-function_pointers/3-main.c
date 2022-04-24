@@ -19,12 +19,13 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	if (*c != '+' && *c != '-' && *c != '*' && *c != '/' && *c != '%')
+	if (get_op_func(c) == NULL || *(c + 1) != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*c == '/' && **(argv + 3) == 0) || (*c == '%' && **(argv + 3) == 0))
+	if ((*c == '/' && atoi(*(argv + 3)) == 0) ||
+			(*c == '%' && atoi(*(argv + 3)) == 0))
 	{
 		printf("Error\n");
 		exit(100);
@@ -33,9 +34,9 @@ int main(int argc, char **argv)
 	num1 = atoi(*(argv + 1));
 	num2 = atoi(*(argv + 3));
 
-	result = get_op_func(c)(num1,num2);
+	result = get_op_func(c)(num1, num2);
 
 	printf("%d\n", result);
 
-	return(0);
+	return (0);
 }
