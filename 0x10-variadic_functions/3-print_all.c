@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 	comma = "";
 	va_start(argptr, format);
 	j = 0;
-	while (*(format + j) != '\0')
+	while (format != 0 && *(format + j) != '\0')
 	{
 		i = 0;
 		while (i < ((int)sizeof(fmtarr) / (int)sizeof(fmt)))
