@@ -11,6 +11,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list argptr, argcpy;
 
+	if (n == 0)
+	{
+		printf("\n");
+		return;
+	}
 	va_start(argptr, n);
 #ifdef _va_copy
 	_vacopy(argcpy, argptr);
