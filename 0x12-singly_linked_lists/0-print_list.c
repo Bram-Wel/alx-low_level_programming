@@ -22,13 +22,15 @@ size_t print_list(const list_t *h)
 		h = h->next;
 	}
 
-	if (h->str != 0)
-		printf("[%d] %s\n", h->len, h->str);
-	else
-		printf("[%d] %p\n", 0, h->str);
+	if (h != 0)
+	{
+		if (h->str != 0)
+			printf("[%d] %s\n", h->len, h->str);
+		else
+			printf("[%d] %p\n", 0, h->str);
 
-	nodes++;
-	h = h->next;
-
+		nodes++;
+		h = h->next;
+	}
 	return (nodes);
 }
