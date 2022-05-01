@@ -13,6 +13,9 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0;
 	unsigned int ub = 0, pos = 0;
 
+	if (b == 0)
+		return (0);
+
 	while (*(b + i) != 0)
 	{
 		if ((*(b + i) - 48) > 1 || (*(b + i) - 48) < 0)
