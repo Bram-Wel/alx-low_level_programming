@@ -57,6 +57,8 @@ int main(int argc, char **argv)
   * @buff: Pointer to buffer.
   * @filename1: From file.
   * @filename2: To file.
+  *
+  * Return: Bytes written to file2.
   */
 size_t subs_read_write(int fd_r, char *buff, char *filename1, char *filename2)
 {
