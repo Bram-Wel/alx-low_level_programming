@@ -20,7 +20,6 @@ int append_text_to_file(const char *filename, char *text_content)
 		text_content = "";
 	for (; *(text_content + count) != 0; count++)
 		;
-/*	printf("count: %d", count);*/
 
 	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == 0)
