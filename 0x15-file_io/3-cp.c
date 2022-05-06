@@ -36,14 +36,14 @@ int main(int argc, char **argv)
 	if ((int)bytes_w < 0)
 		error99(argv[2]);
 	fd_c = close(fd_w);
-	if (fd_c == -1)
+	if (fd_c != 0)
 		error100(fd_w);
 
 	while (bytes_w == 1024)
 		bytes_w = subs_read_write(fd_r, buff, argv[1], argv[2]);
 
 	fd_c = close(fd_r);
-	if (fd_c == -1)
+	if (fd_c != 0)
 		error100(fd_r);
 	free(buff);
 
@@ -78,7 +78,7 @@ size_t subs_read_write(int fd_r, char *buff, char *filename1, char *filename2)
 		error99(filename2);
 
 	fd_c = close(fd_w);
-	if (fd_c == -1)
+	if (fd_c != 0)
 		error100(fd_w);
 
 	return (bytes_w);
