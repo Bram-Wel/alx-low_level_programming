@@ -78,7 +78,7 @@ size_t subs_read_write(int fd_r, char *buff, char *filename1, char *filename2)
 		error99(filename2);
 
 	fd_c = close(fd_w);
-	if (fd_c != 0)
+	if (fd_c != 0 || fd_c == -1)
 		error100(fd_w);
 
 	return (bytes_w);
