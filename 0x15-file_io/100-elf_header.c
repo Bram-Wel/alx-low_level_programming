@@ -83,7 +83,7 @@ void print_address(char *buff)
 	{
 		while (addr_len && !*(buff))
 			--addr_len, ++buff;
-		printf("%17x", *buff & 0xff);
+		printf("%16x", *buff & 0xff);
 		while (--addr_len > 0)
 			printf("%02x", *(++buff) & 0xff);
 	}
@@ -92,7 +92,7 @@ void print_address(char *buff)
 		buff += addr_len;
 		while (addr_len && !*(--buff))
 			--addr_len;
-		printf("%17x", *buff & 0xff);
+		printf("%16x", *buff & 0xff);
 		while (--addr_len > 0)
 			printf("%02x", *(--buff) & 0xff);
 	}
