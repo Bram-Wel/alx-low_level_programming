@@ -2,7 +2,8 @@
 
 /**
   * get_dnodeint_at_index - Finds node at index.
-  * @index: Index of node, starting 0.
+  * @index: Index of node, starting 0
+  * @head: Head of the list..
   *
   * Return: Node at index OR NULL if node doesn't exist.
   */

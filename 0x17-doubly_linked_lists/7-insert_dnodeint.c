@@ -26,13 +26,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			ptr->prev = node;
 			break;
 		}
-		else if (i > idx)
-		{
-			return (0);
-		}
 		i++;
 		ptr = ptr->next;
 	}
+	if (i > idx)
+		return (0);
 
 	return (*h);
 }
