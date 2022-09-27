@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int idx;
 	hash_node_t *nd = malloc(sizeof(hash_node_t));
 
-	if (!key || !nd)
+	if (!key || !nd || !ht)
 		return (0);
 
 	nd->key = strdup(key);
@@ -28,8 +28,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		nd->next = ht->array[idx];
-		ht->array[idx] = nd;
+		if (strcmp(key, ht->array[idx]->key) == 0)
+		{
+			free(ht->array[idx]);
+			ht->array[idx] = nd;
+		}
+		else
+		{
+			nd->next = ht->array[idx];
+			ht->array[idx] = nd;
+		}
 		/*printf("Collision\n");*/
 	}
 	return (1);
