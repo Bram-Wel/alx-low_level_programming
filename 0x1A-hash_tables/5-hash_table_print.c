@@ -9,7 +9,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
-	char *value;
+	char *value, *key;
 	char flag = 0;
 
 	if (!ht)
@@ -19,11 +19,18 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[i])
 		{
-			value = hash_table_get(ht, ht->array[i]->key);
+			key = ht->array[i]->key;
+			value = hash_table_get(ht, key);
 			if (flag)
 				printf(", ");
-			printf("'%s': '%s'", ht->array[i]->key, value);
+			printf("'%s': '%s'", key, value);
 			flag = 1;
+			while (ht->array[i]->next)
+			{
+				key = ht->array[i]->next->key;
+				value = hash_table_get(ht, key);
+				printf(" ,'%s': '%s'", key, value);
+			}
 		}
 	}
 	printf("}\n");
