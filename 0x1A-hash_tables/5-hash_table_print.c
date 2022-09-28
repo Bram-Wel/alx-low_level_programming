@@ -20,17 +20,17 @@ void hash_table_print(const hash_table_t *ht)
 		if (ht->array[i])
 		{
 			key = ht->array[i]->key;
-			value = hash_table_get(ht, key);
+			value = ht->array[i]->value;
 			if (flag)
 				printf(", ");
 			printf("'%s': '%s'", key, value);
-			flag = 1;
 			while (ht->array[i]->next)
 			{
 				key = ht->array[i]->next->key;
-				value = ht->array[i]->next->value;
-				printf(" ,'%s': '%s'", key, value);
+				value = hash_table_get(ht, key);
+				printf(", '%s': '%s'", key, value);
 			}
+			flag = 1;
 		}
 	}
 	printf("}\n");
