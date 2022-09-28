@@ -19,10 +19,10 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[i])
 		{
-			value = hash_table_get(ht, ht->array[i]->key);
+			value = ht->array[i]->value;
 			if (flag)
 				printf(", ");
-			printf("\'%s\':\'%s\'", ht->array[i]->key, value);
+			printf("'%s':'%s'", ht->array[i]->key, value);
 			flag = 1;
 		}
 	}
