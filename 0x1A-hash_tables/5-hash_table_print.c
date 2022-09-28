@@ -28,7 +28,7 @@ void hash_table_print(const hash_table_t *ht)
 			while (ht->array[i]->next)
 			{
 				key = ht->array[i]->next->key;
-				value = hash_table_get(ht, key);
+				value = ht->array[i]->next->value;
 				printf(" ,'%s': '%s'", key, value);
 			}
 		}
