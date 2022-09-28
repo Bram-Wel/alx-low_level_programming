@@ -15,6 +15,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (0);
 	idx = key_index((unsigned char *)key, ht->size);
 	if (ht->array[idx])
+	{
+		while (ht->array[idx]->next)
+			ht->array[idx] = ht->array[idx]->next;
 		return (ht->array[idx]->value);
+	}
 	return (0);
 }
