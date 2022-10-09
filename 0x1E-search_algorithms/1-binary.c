@@ -41,6 +41,7 @@ int binary_search(int *array, size_t size, int value)
 void print(int *array, int left, int right)
 {
 	int i;
+
 	for (i = left; i < right; i++)
 		printf("%d, ", array[i]);
 	printf("%d\n", array[i]);
