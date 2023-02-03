@@ -14,7 +14,7 @@ int advanced_binary(int *array, size_t size, int value);
 int advanced_binary_recursive(int *array, size_t left, size_t right, int value);
 void print_array(int *array, int left, int right);
 int exponential_search(int *array, size_t size, int value);
-int _binary_search(int *array, size_t left, size_t right, int value)
+int _binary_search(int *array, size_t left, size_t right, int value);
 
 /**
  * struct listint_s - singly
