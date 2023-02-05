@@ -8,4 +8,4 @@ all: ${OBJ}
 	${CC} ${SRC} -o ${NAME}
 
 clean:
-	rm -rf *.o school
+	rm -rf *.o ${NAME}
