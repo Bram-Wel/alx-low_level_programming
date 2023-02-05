@@ -40,8 +40,9 @@ def island_perimeter(grid):
                     if grid[i + 1][j] == 1:
                         perimeter += 1
             except IndexError as e:
-                # print(e)
-                pass
+                # print(f"grid{i}{j}: {grid[i][j]}, {e}")
+                if grid[i][j] == 1:
+                    perimeter += 1
 
     if perimeter == 0 and flag == 1:
         perimeter = (2 * len(grid)) + (2 * len(grid[1]))
