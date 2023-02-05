@@ -1,0 +1,21 @@
+CC = gcc # Flag for implicit rules
+CFLAGS = -Wall -Wextra -Werror -pedantic -std=gnu89 -g # Lovely Eeih?!
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+.PHONY = all clean oclean fclean re
+
+all: m.h ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+clean:
+	-${RM} *~ ${NAME}
+
+oclean:
+	-${RM} *.o
+
+fclean: clean oclean
+
+re: fclean
+	-${MAKE}
