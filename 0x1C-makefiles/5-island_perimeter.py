@@ -20,13 +20,15 @@ def island_perimeter(grid):
     Return:
         Perimeter of the Island.
     """
-    perimeter = 0
+    flag, perimeter = 0, 0
 
     if not isinstance(grid, list) or not isinstance(grid[0], list):
         return 0
 
     for i in range(len(grid)):
         for j in range(len(grid[i])):
+            if j == 1:
+                flag = 1
             try:
                 if grid[i][j] == 0:
                     if grid[i][j + 1] == 1:
@@ -41,6 +43,6 @@ def island_perimeter(grid):
                 # print(e)
                 pass
 
-    if perimeter == 0:
+    if perimeter == 0 and flag == 1:
         perimeter = len(grid) * len(grid[1])
     return perimeter
