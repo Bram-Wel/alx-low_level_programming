@@ -44,5 +44,5 @@ def island_perimeter(grid):
                 pass
 
     if perimeter == 0 and flag == 1:
-        perimeter = len(grid) * len(grid[1])
+        perimeter = (2 * len(grid)) + (2 * len(grid[1]))
     return perimeter
