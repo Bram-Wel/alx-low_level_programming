@@ -1,6 +1,6 @@
 CC = gcc # Flag for implicit rules
 CFLAGS = -Wall -Wextra -Werror -pedantic -std=gnu89 -g
-SRC = $(shell find . -name '*.c')
+SRC = main.c school.c
 
 all: school
 
